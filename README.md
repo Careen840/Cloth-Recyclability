@@ -23,7 +23,7 @@ The application is designed to help individuals determine the recyclability of d
 6. Click the "Process" button to determine the recyclability of the textiles.
 7. The recyclability results will be displayed in the text box below.
 
-## Usage 
+## Usage Example
 
 - Enter textiles and percentages:
 - In the text entry box, enter each textile followed by a colon (:) and the percentage.
