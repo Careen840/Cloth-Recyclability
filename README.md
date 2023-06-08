@@ -1,4 +1,4 @@
-# Cloth Recyclability GUI Application
+# Cloth Recyclability Application
 
 This is a simple graphical user interface (GUI) application that allows users to input textiles and their corresponding percentages, and determine the recyclability of each textile based on predefined lists of recyclable and non-recyclable textiles.
 
