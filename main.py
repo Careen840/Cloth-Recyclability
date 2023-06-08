@@ -10,17 +10,17 @@ def determine_recyclability(textiles):
     non_recyclable_percentage = sum(textiles[textile] for textile in textiles if textile.lower() in non_recyclable_textiles)
 
     if non_recyclable_percentage > total_percentage * 0.5:
-        return "Pick another outfit: More than 50% of non-recyclable textiles"
+        return "Pick another cloth: More than 50% of non-recyclable textiles"
 
     if recyclable_percentage > total_percentage * 0.5:
-        return "This outfit can be partly recycled: More than 50% of recyclable textiles"
+        return "This cloth can be partly recycled: More than 50% of recyclable textiles"
 
     result = ""
     for textile, percentage in textiles.items():
         if textile.lower() in recyclable_textiles and percentage >= 0:
-            result += f"{textile}: This outfit can be recycled\n"
+            result += f"{textile}: This cloth can be recycled\n"
         elif textile.lower() in non_recyclable_textiles and percentage >= 0:
-            result += f"{textile}: This outfit cannot be recycled\n"
+            result += f"{textile}: This cloth cannot be recycled\n"
         else:
             result += f"{textile}: Not determined\n"
 
