@@ -53,7 +53,7 @@ The Cloth Recyclability GUI Application offers the following functionality:
 ## Scenarios 
 The Cloth Recyclability GUI Application can be utilized in various scenarios, including:
 
-1. Personal Wardrobe Assessment: Users can input the textiles from their wardrobe and determine the recyclability of their clothing items. This can help individuals make more informed decisions about their fashion choices and promote sustainability in their personal lives.
+1. Personal Wardrobe Assessment: Shoppers can input the textiles from their wardrobe and determine the recyclability of their clothing items. This can help individuals make more informed decisions about their fashion choices and promote sustainability in their personal lives.
 
 2. Sustainable Fashion Brands: Fashion brands and designers can use this application to assess the recyclability of their clothing collections. It can aid in the selection of more environmentally friendly materials and guide the design process towards more sustainable practices.
 
