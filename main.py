@@ -1,19 +1,31 @@
 import tkinter as tk
 
+recyclable_textiles = ["cotton", "linen", "silk", "wool"]
+non_recyclable_textiles = ["polyester", "nylon", "acrylic", "polypropylene", "elastane", "aramid fibers"]
+mixed_textiles = recyclable_textiles + non_recyclable_textiles
+
 def determine_recyclability(textiles):
-    recyclable_textiles = ["cotton", "linen", "silk", "wool"]
-    non_recyclable_textiles = ["polyester", "nylon", "acrylic", "polypropylene", "elastane", "aramid fibers"]
+    total_percentage = sum(textiles.values())
+    recyclable_percentage = sum(textiles[textile] for textile in textiles if textile.lower() in recyclable_textiles)
+    non_recyclable_percentage = sum(textiles[textile] for textile in textiles if textile.lower() in non_recyclable_textiles)
+
+    if non_recyclable_percentage > total_percentage * 0.5:
+        return "Pick another outfit: More than 50% of non-recyclable textiles"
+
+    if recyclable_percentage > total_percentage * 0.5:
+        return "This outfit can be partly recycled: More than 50% of recyclable textiles"
 
     result = ""
     for textile, percentage in textiles.items():
-        if textile.lower() in recyclable_textiles and percentage >= 50:
-            result += f"{textile}: Recyclable\n"
-        elif textile.lower() in non_recyclable_textiles and percentage >= 50:
-            result += f"{textile}: Not recyclable\n"
+        if textile.lower() in recyclable_textiles and percentage >= 0:
+            result += f"{textile}: This outfit can be recycled\n"
+        elif textile.lower() in non_recyclable_textiles and percentage >= 0:
+            result += f"{textile}: This outfit cannot be recycled\n"
         else:
             result += f"{textile}: Not determined\n"
 
     return result
+
 
 def process_textiles():
     input_text = text_entry.get("1.0", tk.END)
@@ -52,3 +64,4 @@ output_text.pack()
 
 # Start the GUI event loop
 window.mainloop()
+
