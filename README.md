@@ -65,4 +65,4 @@ The Cloth Recyclability GUI Application can be utilized in various scenarios, in
 ## Lessons Learned
 
 1. One of the challenges faced in building this project is lacking knowledge on what product could be recycled or not. 
-2. Designing an intuitive and visually appealing user interface can be challenging, especially if you're new to GUI development. It requires careful consideration of layout, color schemes, and user interaction to ensure a pleasant user experience
+2. Designing a visually appealing user interface can be challenging, especially if you're new to GUI development. It requires careful consideration of layout, color schemes, and user interaction to ensure a pleasant user experience
