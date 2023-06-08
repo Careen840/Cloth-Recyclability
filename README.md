@@ -1,10 +1,10 @@
 # Cloth Recyclability Application
 
-This is a basic Python application built using the Tkinter library that allows shoppers to determine the recyclability of various textile materials based on their percentages. The application provides a GUI interface where users can enter the materials and their corresponding percentages, and it displays the results of recyclability.
+This is a simple Python application built using the Tkinter library that allows shoppers to determine the recyclability of various textile materials based on their percentages. The application provides a GUI interface where users can enter the materials and their corresponding percentages, and it displays the results of recyclability.
 
 ## Motivation
 
-The Cloth Recyclability GUI Application is designed to help individuals determine the recyclability of different textiles commonly used in clothing. Recycling textiles is an important step towards promoting sustainability and reducing waste in the fashion industry. This application aims to provide users with a convenient way to assess the recyclability of their clothing items based on predefined lists of recyclable and non-recyclable textiles.
+The application is designed to help individuals determine the recyclability of different textiles commonly used in clothing. Recycling textiles is an important step towards promoting sustainability and reducing waste in the fashion industry. This application aims to provide users with a convenient way to assess the recyclability of their clothing items based on predefined lists of recyclable and non-recyclable textiles.
 
 
 ## Prerequisites
