@@ -22,7 +22,7 @@ def determine_recyclability(textiles):
         elif textile.lower() in non_recyclable_textiles and percentage >= 0:
             result += f"{textile}: This cloth cannot be recycled\n"
         else:
-            result += f"{textile}: Not determined\n"
+            result += f"{textile}: Undetermined\n"
 
     return result
 
